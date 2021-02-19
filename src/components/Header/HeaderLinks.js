@@ -12,7 +12,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, CloudDownload, Mail } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -29,34 +29,40 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Products"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
+            <Link to="large-box" target="_blank" className={classes.link, classes.dropdownLink}>
+              <b>Large (16in logs 120-140lbs)</b>
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
+            <Link to="medium-box" target="_blank" className={classes.link, classes.dropdownLink}>
+              <b>Medium (16in Logs 60-70lb)</b>
+            </Link>,
+            <Link to="small-box" target="_blank" className={classes.link, classes.dropdownLink}>
+              <b>Small Mini Logs (8inch 25-30lbs)</b>
+            </Link>,
+            <Link to="kindling-box" target="_blank" className={classes.link, classes.dropdownLink}>
+            <b>Kindling (8inch 25lb)</b>
+            </Link>,
+            <Link to="collection-orders" target="_blank" className={classes.link, classes.dropdownLink}>
+            <b>Local Collection Orders</b>
+            </Link>,
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
+        
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="contact-page"
           color="transparent"
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <Mail className={classes.icons} /> Contact US
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -72,7 +78,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://twitter.com/fire_natural"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -90,7 +96,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/naturalfirewood/"
             target="_blank"
             className={classes.navLink}
           >
@@ -107,7 +113,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/natuaralfirewood/"
             target="_blank"
             className={classes.navLink}
           >

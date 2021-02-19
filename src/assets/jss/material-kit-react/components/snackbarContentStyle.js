@@ -22,7 +22,7 @@ const snackbarContentStyle = {
     maxWidth: "100%",
     minWidth: "auto",
     boxShadow:
-      "0 12px 20px -10px rgba(255, 255, 255, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(255, 255, 255, 0.2)"
+      "0 12px 20px -10px rgba(176, 140, 88, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(176, 140, 88, 0.2)"
   },
   info: {
     backgroundColor: "#00d3ee",

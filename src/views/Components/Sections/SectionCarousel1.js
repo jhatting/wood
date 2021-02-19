@@ -3,14 +3,14 @@ import React from "react";
 import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// core components
+// @material-ui/icons
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/banner-1e.jpg";
-import image2 from "assets/img/banner-2w.jpg";
-import image3 from "assets/img/banner-6f.jpg";
+import image1 from "assets/img/banner-3e.jpg";
+import image2 from "assets/img/banner-5w.jpg";
+import image3 from "assets/img/banner-9f.jpg";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
